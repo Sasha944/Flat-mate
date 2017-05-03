@@ -1,0 +1,54 @@
+@colorMain: white;
+.Main {
+  margin-top: 40px;
+  margin-bottom: 200px;
+  &-content {
+    .headerMain {
+      margin-bottom: 95px;
+      .textMain {
+        font-size: 50px;
+        color: @colorMain
+
+      }
+      .smallMain {
+        font-size: 26px;
+        width: 550px;
+        display: block;
+        white-space: normal;
+        color: #c5d2e5;
+      }
+    }
+    .Main-btn {
+      &-button {
+        font-size: 35px;
+        color: @colorMain;
+        background: #67bf95;
+        padding: 18px 38px;
+        border-radius: 10px;
+        transition: color  .3s;
+        transition: background .5s;
+        text-transform: capitalize;
+        &:hover,
+        &:active,
+        &:focus {
+          text-decoration: none;
+        }
+        &:hover{
+          color: lighten(@colorMain, 15%);
+          background: lighten( #67bf95, 15%);
+        }
+        &:focus{
+          color: darken(@colorMain, 10%);
+          background: lighten( #67bf95, 10%);
+        }
+      }
+    }
+  }
+  &-image {
+    line-height: 300px;
+    .imageMain {
+      width: 305px;
+      height: 240px;
+    }
+  }
+}

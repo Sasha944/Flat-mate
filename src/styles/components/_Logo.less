@@ -1,0 +1,60 @@
+@height:41px;
+@color: #efefef;
+@iconOverlayColor: #57b287;
+@iconBaseColor: #67bf95;
+.Logo{
+  display: inline-block;
+  height:@height;
+  position: relative;
+  font-size: 41px;
+  padding-left: @height+10px;
+  color: @color;
+  line-height: 150px;
+  transition: color .3s;
+  text-transform: capitalize;
+
+  &:before,
+  &:after{
+    content: "";
+    position: absolute;
+    top:55px;
+    left: 0;
+    height: 0;
+    width: 0;
+    border: @height/2 solid @iconBaseColor;
+    border-radius: 50%;
+    transition: border-color .3s;
+  }
+
+  &:after{
+    content: "";
+    border-color: @iconOverlayColor;
+  border-top-color: transparent;
+  border-right-color: transparent;
+    transform: rotate(45deg);
+  }
+  &:focus,
+  &:hover{
+    text-decoration: none;
+    color: lighten(@color, 15%);
+    &:before{
+      border-color: lighten(@iconBaseColor, 15%);
+    }
+    &:after{
+      border-left-color: lighten(@iconOverlayColor, 15%);
+      border-bottom-color: lighten(@iconOverlayColor, 15%);
+    }
+  }
+
+  &:active{
+    color: darken(@color, 15%);
+    &:before{
+      border-color: lighten(@iconBaseColor, 15%);
+
+    }
+    &:after{
+      border-left-color: lighten(@iconOverlayColor, 15%);
+      border-bottom-color: lighten(@iconOverlayColor, 15%);
+    }
+  }
+}

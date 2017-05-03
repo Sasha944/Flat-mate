@@ -1,0 +1,86 @@
+@carousel-color: white;
+.Carousel-hero{
+  background: #52ad81;
+  .container{
+    .header-carousel{
+      height: 240px;
+      width: 100%;
+      text-align: center;
+      display: block;
+      .carousel-main{
+        font-size: 56px;
+        color: @carousel-color;
+        margin-top: 100px;
+      }
+      .carousel-small{
+        color: @carousel-color;
+        font-size: 30px;
+        text-align: left;
+        display: block;
+        margin-left: 150px;
+
+      }
+    }
+}
+}
+.carousel-left{
+  font-size: 17px;
+  position: absolute;
+  top: 54px;
+  left:30px;
+  color: #b3dbc8;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #b3dbc8;
+  text-align:center;
+  line-height: 35px;
+  border-radius: 50%;
+  font-weight:400;
+  transition: background .4s;
+  &:hover{
+    background: #5dba8d ;
+    color: #b3dbc8;
+  }
+  &:active{
+    background: darken(#5dba8d,20%);
+    color:#b3dbc8;
+  }
+  &:focus{
+    background: darken(#5dba8d,15%);
+    color:#b3dbc8;
+  }
+
+}
+.carousel-right{
+  position: absolute;
+  right: 30px;
+  top: 54px;
+  font-size: 17px;
+  color: #b3dbc8;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #b3dbc8;
+  text-align:center;
+  line-height: 35px;
+  border-radius: 50%;
+  font-weight:400;
+  transition: background .4s;
+  &:hover{
+    background: #5dba8d ;
+    color: #b3dbc8;
+  }
+  &:active{
+    background: darken(#5dba8d,20%);
+    color:#b3dbc8;
+  }
+  &:focus{
+    background: darken(#5dba8d,15%);
+    color:#b3dbc8;
+  }
+}
+.carousel-image{
+  width: 100%;
+}
+.carousel-container{
+  position: relative;
+}

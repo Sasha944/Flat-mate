@@ -1,0 +1,118 @@
+@form_color: #d7d7d7;
+
+.formflat{
+  background:#2d3136 ;
+  .container{
+    .form-image{
+      text-align: center;
+      display: block;
+      .image-link{
+        transition:  .3s;
+        .imageEmail{
+        height: 300px;
+        width: 300px;
+      }
+        &:hover{
+          opacity: 0.8;
+        }
+        &:focus{
+          opacity: 0.4;
+        }
+
+
+      }
+      &:before{
+       content:"";
+       display: block;
+       height: 100px;
+     }
+      &:after{
+        content:"1231dfdsdsfsdf";
+        display: block;
+        height: 130px;
+      }
+
+    }
+    .row{
+      .col-xs-4{
+        .form-group{
+          label{
+            font-size: 35px;
+            color: @form_color;
+            font-weight: 200;
+            position: relative;
+            font-family: Ubuntu;
+            &:after{
+              content:"*";
+              font-size: 25px;
+              position: absolute;
+              color: #be393b;
+              top: -10px;
+            }
+          }
+          .form-control{
+            height: 60px;
+            background:transparent ;
+            border: 2px solid #743538;
+            color:white;
+            font-size: 20px;
+            &:focus{
+              box-shadow: 0 0 10px (#743538);
+            }
+          }
+        }
+      }
+      .col-xs-push-3{
+        label{
+          font-size: 35px;
+          color:@form_color;
+          font-weight: 200;
+          font-family:Ubuntu;
+          display: block;
+        }
+        .textarea{
+          background:transparent ;
+          border: 2px solid #743538;
+          color:white;
+          font-size: 20px;
+          &:focus{
+            box-shadow: 0 0 10px (#743538);
+            border: 2px solid darken(#743538,55%);
+          }
+        }
+        .button{
+          display: block;
+          text-align: right;
+          &:after{
+            content:"";
+            height: 100px;
+            display: block;
+          }
+        .form-link {
+          text-align: right;
+          background: #be393b;
+          padding: 13px 22px;
+          color:white;
+          text-transform: uppercase;
+          font-size: 25px;
+          border-radius: 5px;
+          transition: background .7s;
+          display: inline-block;
+          margin-top: 50px;
+          &:hover{
+            text-decoration: none;
+            background: lighten(#be393b,10%);
+          }
+          &:focus{
+            text-decoration: none;
+            background: darken(#be393b,5%);
+          }
+          &:active{
+            background: lighten(#be393b,5%);
+          }
+        }
+        }
+      }
+    }
+  }
+}

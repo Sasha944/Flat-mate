@@ -1,0 +1,111 @@
+.List{
+  &-content{
+    .list{
+      &:after{
+        display: inline-block;
+        content:"";
+        width: 100%;
+        height: 0;
+    }
+      .item{
+        display: inline-block;
+        .seconditem{
+          width: 500px;
+          height: auto;
+          margin-top: 180px;
+          margin-bottom: 100px;
+          .textList{
+            color:#37414e;
+            font-size: 40px;
+          }
+          .smallList{
+            text-align: justify;
+            font-size: 20px;
+            color:#4b596c;
+            font-family: Ubuntu;
+          }
+        }
+        .List-image{
+          width: 230px;
+          height: 275px;
+          vertical-align: baseline;
+        }
+        .List-icon{
+          .fa-facebook{
+            font-size: 30px;
+            color:#67bf95;
+            position: relative;
+            display: block;
+            text-align: center;
+            transition: background,color,border .6s;
+            &:hover,
+            &:focus{
+              text-decoration: none;
+            }
+            &:hover{
+              color: darken(#67bf95,15%);
+              &:after{
+                background: darken(white,10%);
+               opacity: 0.5;
+                font-size: 52px;
+                text-decoration: none;
+              }
+            }
+            &:focus{
+              &:after{
+                background: darken(white,20%);
+              opacity:0.6;
+              }
+            }
+            &:active{
+              &:after{
+                background: darken(white,30%); ;
+              }
+            }
+            &:after{
+              content: "";
+              border: 3px solid #67bf95;
+              width: 60px;
+              height: 60px;
+              position: absolute;
+              top: -16px;
+              right: -1px;
+              border-radius: 50%;
+              transition: background .3s;
+            }
+          }
+          .fa-pencil{
+            font-size: 30px;
+            color:white;
+            width: 60px;
+            height: 60px;
+            background: #67bf95;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 60px;
+            margin-bottom: 60px;
+            transition: background .4s;
+            &:hover,
+            &:focus{
+              text-decoration: none;
+            }
+            &:hover{
+              background: lighten(#67bf95,15%);
+            }
+            &:focus{
+              background: darken(#67bf95,10%);
+            }
+            &:active{
+              background: darken(#67bf95,18%);
+            }
+          }
+        }
+      }
+      .last-item{
+         vertical-align: 60px;
+       }
+    }
+  }
+}
+
+

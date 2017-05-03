@@ -1,0 +1,32 @@
+@color: white;
+.Login {
+  line-height: 160px;
+
+  &-text {
+    display: inline-block;
+    margin-right: 15px;
+    color: #9fa7b3;
+    font-size: 18px;
+  }
+  &-btn {
+    font-size: 17px;
+    background: #3d4b60;
+    padding: 8px 9px;
+    border-radius: 6px;
+    transition: color,background .4s;
+    color: @color;
+    text-transform: uppercase;
+    &:active,
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+    &:hover{
+      color: darken(@color, 15%);
+      background: darken(#3d4b60, 5%) ;
+    }
+    &:focus{
+      color: darken(@color, 10%)
+    }
+  }
+}
