@@ -27,14 +27,14 @@
        height: 100px;
      }
       &:after{
-        content:"1231dfdsdsfsdf";
+        content:"";
         display: block;
         height: 130px;
       }
 
     }
     .row{
-      .col-xs-4{
+      .col-sm-4{
         .form-group{
           label{
             font-size: 35px;
@@ -62,22 +62,28 @@
           }
         }
       }
-      .col-xs-push-3{
+      .col-sm-8{
         label{
           font-size: 35px;
           color:@form_color;
           font-weight: 200;
           font-family:Ubuntu;
           display: block;
+          &:after{
+            content:"*";
+            font-size: 25px;
+            position: absolute;
+            color: #be393b;
+            top: -10px;
+          }
         }
-        .textarea{
+        .form-control{
           background:transparent ;
           border: 2px solid #743538;
           color:white;
           font-size: 20px;
           &:focus{
             box-shadow: 0 0 10px (#743538);
-            border: 2px solid darken(#743538,55%);
           }
         }
         .button{
